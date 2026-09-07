@@ -1,6 +1,17 @@
 <div align="center">
 
-<img src="assets/home_page.png" alt="AXON Healthcare Analytics" width="850"/>
+<img width="931" height="525" alt="Home Page" src="https://github.com/user-attachments/assets/a8f31f41-d0d5-4b14-8d85-b8ad87655bf8" />
+
+<img width="925" height="517" alt="Executive Dashboard" src="https://github.com/user-attachments/assets/1374d692-24f7-428d-a60f-79391b1fa440" />
+
+<img width="927" height="517" alt="Patients Analytics" src="https://github.com/user-attachments/assets/e854d714-7513-4684-913d-c23cc1c46a67" />
+
+<img width="927" height="521" alt="Clinical Operations" src="https://github.com/user-attachments/assets/a5cd4e69-0791-4549-8748-431787151f83" />
+
+<img width="930" height="520" alt="Doctor Performance" src="https://github.com/user-attachments/assets/9e56fddd-3323-4f4f-b8f5-a0a0b9ad3fb8" />
+
+<img width="930" height="522" alt="Project Overview" src="https://github.com/user-attachments/assets/82999ae2-c86f-43a7-aa5b-c56768d58e43" />
+
 
 # 🏥 AXON — Healthcare EMR Analytics Project
 
@@ -69,7 +80,7 @@ This project builds a single analytical layer that answers those questions acros
 
 ## 🔄 Data Flow Architecture
 
-<img src="assets/data_flow.png" alt="Data Flow: EMR to Tableau, Power BI, AI/Insights" width="850"/>
+<img width="2172" height="724" alt="DataFlow" src="https://github.com/user-attachments/assets/ad919ba2-64e1-4530-9de5-a07af79450b4" />
 
 Raw EMR activity (patients · visits · billing) lands in a **source database**, passes through an **ETL layer** (Extract → Transform → Load), and is modeled into a **Star Schema data warehouse**. From there, the same governed dataset feeds **Tableau**, **Power BI**, and downstream **AI/Insights** — one model, multiple consumption layers. *(Reference pipeline pattern from the capstone brief — implemented against this project's own SQL build and BI files.)*
 
@@ -82,7 +93,7 @@ Raw EMR activity (patients · visits · billing) lands in a **source database**,
 
 ## 🧬 Database Schema
 
-<img src="assets/schema.png" alt="healthcare_db Schema — MySQL Workbench" width="380" align="right"/>
+<img width="1054" height="1493" alt="Schema" src="https://github.com/user-attachments/assets/b192353b-383d-4d95-b2b6-5a026647e279" />
 
 The `healthcare_db` MySQL schema contains **9 relational tables**, all loaded and queried via `HealthCare_DataBase.sql`:
 
@@ -114,7 +125,7 @@ Modeled as a **Star Schema** with `visit` as the central fact table; `treatment`
 
 ### DAX Measure Library
 
-<img src="assets/measures.png" alt="Power BI DAX Measures" width="320" align="right"/>
+<img width="265" height="557" alt="Measures" src="https://github.com/user-attachments/assets/21b57361-e0fb-4c1b-aaa5-ba792b561c35" />
 
 A dedicated `TableMeasure_Patients` measure table holds 20+ centralized DAX measures — including Active Patients, Cancellation Rate, Chronic Patient Rate, Doctor Success Rate, Doctor's Visit Completion Rate, Follow-Up Rate, Insurance Coverage Rate, Success Rate, and Top Doctor Revenue — so every dashboard page pulls from **one governed calculation**, never a page-local formula.
 
@@ -128,7 +139,7 @@ A dedicated `TableMeasure_Patients` measure table holds 20+ centralized DAX meas
 
 ### 1️⃣ Executive Dashboard — *Hospital CEO / Board*
 
-<img src="assets/executive_dashboard.png" alt="Executive Dashboard" width="850"/>
+<img width="925" height="517" alt="Executive Dashboard" src="https://github.com/user-attachments/assets/1374d692-24f7-428d-a60f-79391b1fa440" />
 
 A high-level snapshot of total patients, visits, treatment success, and revenue billed across departments — a fast, single view of hospital-wide performance.
 
@@ -147,7 +158,7 @@ A high-level snapshot of total patients, visits, treatment success, and revenue 
 
 ### 2️⃣ Patient Analytics — *Clinical Staff / Case Management*
 
-<img src="assets/patient_analytics.png" alt="Patient Analytics Dashboard" width="850"/>
+<img width="927" height="517" alt="Patients Analytics" src="https://github.com/user-attachments/assets/ea87f896-5b37-4e58-9067-b8690cca7e29" />
 
 Explore patient demographics, age groups, chronic conditions, allergies, blood types, and insurance coverage to understand who your patients are and what they need.
 
@@ -166,7 +177,7 @@ Explore patient demographics, age groups, chronic conditions, allergies, blood t
 
 ### 3️⃣ Clinical Operations Analytics — *Department Heads / Nursing*
 
-<img src="assets/clinical_operations.png" alt="Clinical Operations Analytics Dashboard" width="850"/>
+<img width="927" height="521" alt="Clinical Operations" src="https://github.com/user-attachments/assets/b2b676fd-0497-40bd-a898-022f85439ae9" />
 
 Monitor visit completion, cancellations, follow-up compliance, and emergency load by day and month to spot scheduling gaps and keep daily operations running smoothly.
 
@@ -184,7 +195,7 @@ Monitor visit completion, cancellations, follow-up compliance, and emergency loa
 
 ### 4️⃣ Doctor Performance Analysis — *Medical Director / HR*
 
-<img src="assets/doctor_performance.png" alt="Doctor Performance Analysis Dashboard" width="850"/>
+<img width="930" height="520" alt="Doctor Performance" src="https://github.com/user-attachments/assets/09cf82d3-e3e3-4d06-97b4-f3a2ae5abfe7" />
 
 Compare doctor workload, years of experience, completion and success rates, and revenue contribution across specialties to identify top performers and staffing needs.
 
@@ -299,9 +310,9 @@ Planned dashboards (data model already supports these, not yet built as standalo
 
 | Name | Role |
 |---|---|
-| Shubham Vishwakarma | Data Analyst — BRD, KPI Framework, SQL, Power BI |
-| Ananya | Data Analyst |
-| Suraj | Data Analyst |
+| Shubham Vishwakarma | Data Analyst — BRD, KPI Framework, SQL, Power BI | www.linkedin.com/in/imshubhamv28
+| Ananya | Data Analyst | Tableau | https://www.linkedin.com/in/ananyasanap/
+| Suraj | Data Analyst | Excel, Power Quary | https://www.linkedin.com/in/suraj-ranpise-05bb1887/
 
 ---
 
@@ -309,7 +320,6 @@ Planned dashboards (data model already supports these, not yet built as standalo
 
 - Capstone brief, dataset shape, and KPI/dashboard specification: **ExcelR** "AXON Healthcare Analytics" program.
 - Reference/study hub used during preparation: **Mahendra Singh** — [emr-site-nine.vercel.app](https://emr-site-nine.vercel.app/), [LinkedIn](https://www.linkedin.com/in/mahendra-singh-83699485/), [Medium](https://medium.com/@mahendraa1188).
-
 ---
 
 ## 📬 Connect
